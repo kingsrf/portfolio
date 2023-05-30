@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>King's Portfolio</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #121212;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			font-family: Arial, sans-serif;
+			color: #FFFFFF;
+			max-width: 940px;
+			margin: 0 auto;
+		}
+
+		.container {
+			text-align: center;
+		}
+
+		.title {
+			font-size: 32px;
+			font-family: cursive;
+			margin-bottom: 20px;
+			color: #00FFFF;
+		}
+
+		.gif-container {
+			position: relative;
+			display: inline-block;
+			margin-bottom: 40px;
+			transition: transform 0.3s ease;
+		}
+
+		.gif-container img {
+			width: 320px;
+			height: 320px;
+			border-radius: 50%;
+			border: 4px solid transparent;
+			box-shadow: 0 0 0 8px #00FFFF, 0 0 0 12px rgba(0, 255, 255, 0.3);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.gif-container img:hover {
+			transform: scale(1.1);
+			box-shadow: 0 0 0 8px #00FFFF, 0 0 0 12px rgba(0, 255, 255, 0.5);
+			animation: liquid-border 2s infinite;
+		}
+
+		@keyframes liquid-border {
+			0% {
+				box-shadow: 0 0 0 8px #00FFFF, 0 0 0 12px rgba(0, 255, 255, 0.5);
+			}
+			50% {
+				box-shadow: 0 0 0 8px #00FFFF, 0 0 0 20px rgba(0, 255, 255, 0.8);
+			}
+			100% {
+				box-shadow: 0 0 0 8px #00FFFF, 0 0 0 12px rgba(0, 255, 255, 0.5);
+			}
+		}
+
+		.button-container {
+			opacity: 0;
+			animation: fade-in 1s ease forwards;
+			animation-delay: 1s;
+		}
+
+		.button-container .button {
+			display: block;
+			margin: 10px;
+			padding: 8px 12px;
+			background-color: #00FFFF;
+			color: #121212;
+			text-decoration: none;
+			border-radius: 4px;
+			opacity: 0;
+			animation: fade-in 0.5s ease forwards;
+			transition: transform 0.3s ease, background-color 0.3s ease;
+		}
+
+		.button-container .button:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 0 8px #00FFFF, 0 0 0 12px rgba(0, 255, 255, 0.5);
+			background-color: #00CED1;
+		}
+
+		.content-container {
+			display: none;
+			margin-top: 40px;
+			padding: 20px;
+			background-color: #FFFFFF;
+			color: #121212;
+			border-radius: 4px;
+			animation: fade-in 0.5s ease forwards;
+		}
+
+		.show {
+			display: block;
+		}
+
+		.content-container ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.content-container li {
+			display: none;
+		}
+
+		.content-container.show li {
+			display: block;
+			animation: fade-in 0.5s ease forwards;
+			animation-delay: 0.5s;
+		}
+
+		a {
+			color: #00FFFF;
+		}
+
+		a:hover {
+			background-color: #00FFFF;
+			color: #121212;
+			border-radius: 4px;
+		}
+
+		@keyframes fade-in {
+			0% {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">King Sambonge</h1>
+
+		<div class="gif-container" id="gif-container">
+			<img src="Me.gif" alt="GIF Image">
+		</div>
+
+		<div class="button-container">
+			<a class="button" href="#" data-target="contacts">Contacts</a>
+			<a class="button" href="#" data-target="education">Education</a>
+			<a class="button" href="#" data-target="work-experience">Work Experience</a>
+			<a class="button" href="#" data-target="skills">Skills</a>
+		</div>
+
+		<div class="content-container" id="contacts">
+			<h2>Contacts</h2>
+			<p>For more inquiries, <a href="mailto:kingsrf.info@gmail.com" target="_blank">kingsrf.info@gmail.com</a></p>
+		</div>
+
+		<div class="content-container" id="education">
+			<h2>Education</h2>
+			<p>
+				<ul>
+					<li><em>Associates of Applied Science in Application Development</em></li>
+					<li> at <a href="https://www.seattlecolleges.edu">Seattle Colleges</a> Spring 2023-Present</li>
+				</ul>
+			</p>
+		</div>
+
+		<div class="content-container" id="work-experience">
+			<h2>Work Experience</h2>
+			<p>
+				<ul>
+					<li><em>Managed</em> <a href="https://www.instagram.com/ossoma_house">Ossoma House</a> guest house for 7 months during Jan-Aug 2021</li>
+					<li>Resigned on good terms, and maintain great relationship with the Owner and Staff.</li>
+					<br>
+					<li><em>IT Consultant</em> of a District Administration in Luanda, Angola for 1.5 years during 2021 Jul - Jan 2023</li>
+					<br>
+					<li>Plus, 3 years of experience in <em>IT Freelance Services.</em></li>
+				</ul>
+			</p>
+		</div>
+
+		<div class="content-container" id="skills">
+			<h2>Skills</h2>
+			<p>
+				<ul>
+					<li>Great Language proficiency in Portuguese & English</li>
+                	<li>(I can pronounce Worcestershire Sauce, if that helps to explain my skill level)</li>
+    	            <br>
+        	        <li>I must admit, I prefer the path of least resistance.</li>
+            	    <li>I have an uncanny ability to channel my ''inner sloth'' and uncover the most efficient shortcuts and energy-saving methods.</li>
+                	<br>
+	                <li>Proficient in HTML, CSS, and JavaScript (as seen in this portfolio).</li>
+    	            <br>
+        	        <li>Comfortable wearing many hats, from programming to IT consulting to guest house management/assistant.</li>
+            	</ul>
+			</p>
+		</div>
+	</div>
+
+	<script>
+		const buttons = document.querySelectorAll('.button');
+		const contentContainers = document.querySelectorAll('.content-container');
+
+		buttons.forEach((button) => {
+			button.addEventListener('click', () => {
+				const target = button.dataset.target;
+				const targetContent = document.getElementById(target);
+
+				contentContainers.forEach((container) => {
+					container.classList.remove('show');
+				});
+
+				targetContent.classList.add('show');
+			});
+		});
+	</script>
+</body>
+</html>
