@@ -107,9 +107,21 @@
 			display: block;
 		}
 
+		.content-container :hover {
+			background-color: #e0e0e0;
+		}
+
 		.content-container ul {
 			list-style-type: none;
 			padding: 0;
+			padding-left: 20px;
+		}
+
+		.content-container ul li:nth-child(2),
+		.content-container ul li:nth-child(4),
+		.content-container ul li:nth-child(5),
+		.content-container ul li:nth-child(6) {
+			margin-bottom: 10px;
 		}
 
 		.content-container li {
@@ -124,6 +136,7 @@
 
 		a {
 			color: #00FFFF;
+			text-decoration: none;
 		}
 
 		a:hover {
@@ -146,7 +159,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="title">King Sambonge</h1>
+		<h1 class="title"><em>King Sambonge</em></h1>
 
 		<div class="gif-container" id="gif-container">
 			<a href="javascript:location.reload(true)">
@@ -155,56 +168,56 @@
 		</div>
 
 		<div class="button-container">
-			<a class="button" href="#" data-target="contacts">Contacts</a>
-			<a class="button" href="#" data-target="education">Education</a>
-			<a class="button" href="#" data-target="work-experience">Work Experience</a>
-			<a class="button" href="#" data-target="skills">Skills</a>
+			<a class="button" href="#" data-target="contacts"><em>Contacts</em></a>
+			<a class="button" href="#" data-target="education"><em>Education</em></a>
+			<a class="button" href="#" data-target="work-experience"><em>Work Experience</em></a>
+			<a class="button" href="#" data-target="skills"><em>Skills</em></a>
 		</div>
 
 		<div class="content-container" id="contacts">
-			<h2>Contacts</h2>
-			<p>For more inquiries, <a href="mailto:kingsrf.info@gmail.com" target="_blank">kingsrf.info@gmail.com</a></p>
+			<h2><em>Contacts</em></h2>
+			<ul>
+				<li>For more inquiries, <a href="mailto:kingsrf.info@gmail.com" target="_blank">
+					<em>kingsrf.info@gmail.com</em></a></li>
+			</ul>
 		</div>
 
 		<div class="content-container" id="education">
-			<h2>Education</h2>
-			<p>
-				<ul>
-					<li><em>Associates of Applied Science in Application Development</em></li>
-					<li> at <a href="https://www.seattlecolleges.edu">Seattle Colleges</a> Spring 2023-Present</li>
-				</ul>
-			</p>
+			<h2><em>Education</em></h2>
+			<ul>
+				<li><em>Associates of Applied Science in Application Development</em></li>
+				<li> at <a href="https://www.seattlecolleges.edu">Seattle Colleges</a> Spring 2023-Present</li>
+			</ul>
 		</div>
 
 		<div class="content-container" id="work-experience">
-			<h2>Work Experience</h2>
-			<p>
-				<ul>
-					<li><em>Managed</em> <a href="https://www.instagram.com/ossoma_house">Ossoma House</a> guest house for 7 months during Jan-Aug 2021</li>
-					<li>Resigned on good terms, and maintain great relationship with the Owner and Staff.</li>
-					<br>
-					<li><em>IT Consultant</em> of a District Administration in Luanda, Angola for 1.5 years during 2021 Jul - Jan 2023</li>
-					<br>
-					<li>Plus, 3 years of experience in <em>IT Freelance Services.</em></li>
-				</ul>
-			</p>
+			<h2><em>Work Experience</em></h2>
+			<ul>
+				<li><em>Managed</em> <a href="https://www.instagram.com/ossoma_house">Ossoma House</a> guest house for 7 months during Jan-Aug 2021</li>
+				<li>(Resigned on good terms, and still maintain great relationship with the Owner and Staff).</li>
+				
+				<li><em>IT Consultant</em> of a District Administration in Luanda, Angola for 1.5 years during 2021 Jul - Jan 2023. (Still provide <em>Remote Call Service</em>)</li>
+				
+				<li>Plus, 3 years of experience in <em>IT Freelance Services.</em></li>
+			</ul>
 		</div>
 
 		<div class="content-container" id="skills">
-			<h2>Skills</h2>
-			<p>
-				<ul>
-					<li>Great Language proficiency in Portuguese & English</li>
-                	<li>(I can pronounce Worcestershire Sauce, if that helps to explain my skill level)</li>
-    	            <br>
-        	        <li>I must admit, I prefer the path of least resistance.</li>
-            	    <li>I have an uncanny ability to channel my ''inner sloth'' and uncover the most efficient shortcuts and energy-saving methods.</li>
-                	<br>
-	                <li>Proficient in HTML, CSS, and JavaScript (as seen in this portfolio).</li>
-    	            <br>
-        	        <li>Comfortable wearing many hats, from programming to IT consulting to guest house management/assistant.</li>
-            	</ul>
-			</p>
+			<h2><em>Skills</em></h2>
+			<ul>
+				<li>Great Language proficiency in <em>Portuguese & English</em></li>
+                <li>(I can pronounce Worcestershire Sauce, if that helps to explain my skill level)</li>
+
+                <li>I must admit, I prefer the path of least resistance.</li>
+                <li>I have an uncanny ability to channel my ''inner sloth'' and uncover the most efficient shortcuts and energy-saving methods.</li>
+
+                <li>Proficient in HTML, CSS, and JavaScript (as seen in this portfolio).</li>
+
+                <li>Adaptability</li>
+
+                <li><em>Comfortable</em> wearing many hats, from programming to IT consulting to guest house management/assistant.</li>
+            </ul>
+
 		</div>
 	</div>
 
